@@ -42,8 +42,7 @@ const Tickets = () => {
                                 <td>{ticket.description}</td>
                                 <td>{ticket.price}$</td>
                                 <td>
-                                <Link className="btn btn-light" to={"/tickets/tt"} props={ticket}><b>View ticket</b></Link> <br></br> <br></br>
-                                <Link className="btn btn-light" to={"/tickets"} ><b>Delete ticket</b></Link>  
+                                <a className="btn btn-light" href={`/tickets/${ticket.id}`} ><b>View ticket</b></a> <br></br> <br></br>
                                 </td>
                             </tr>
                         ))}
